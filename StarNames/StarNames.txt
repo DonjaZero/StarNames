@@ -1,0 +1,29 @@
+## Title: Star Names
+# Display the names of the stars in the Champion Point constellations
+
+## Author: DonjaZero
+## Contributors: Based on code by Kyzeragon et al.
+
+## AddOnVersion: 1
+## Version: 1.0.0
+## APIVersion: 101035
+
+## IsLibrary: false
+## DependsOn: LibAddonMenu-2.0>=31
+## OptionalDependsOn: LibFilteredChatPanel
+
+## SavedVariables: StarNamesSavedVariables
+
+# Main logic
+src/init.lua
+src/screenUpdates.lua
+
+# Settings menu definition for LibAddonMenu
+settings/mainMenu.lua
+
+# Keybind definitions
+bindings.xml
+
+# This Add-on is not created by, affiliated with, or sponsored by, ZeniMax Media Inc. or its affiliates.
+# The Elder Scrolls® and related logos are registered trademarks or trademarks of ZeniMax Media Inc. in the United States
+# and/or other countries. All rights reserved.
