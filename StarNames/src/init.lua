@@ -1,6 +1,6 @@
 StarNames = StarNames or {}
 StarNames.name = "StarNames"
-StarNames.version = "1.0.0"
+StarNames.version = "1.0.1"
 StarNames.author = "DonjaZero"
 
 StarNames.experimental = false -- Experimental features flag for development branches
