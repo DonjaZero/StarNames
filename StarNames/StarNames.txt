@@ -4,9 +4,9 @@
 ## Author: DonjaZero
 ## Contributors: Based on code by Kyzeragon et al.
 
-## AddOnVersion: 2
-## Version: 1.0.1
-## APIVersion: 101035 101036
+## AddOnVersion: 3
+## Version: 1.0.2
+## APIVersion: 101036 101037
 
 ## IsLibrary: false
 ## DependsOn: LibAddonMenu-2.0>=31
