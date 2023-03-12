@@ -1,6 +1,6 @@
 StarNames = StarNames or {}
 StarNames.name = "StarNames"
-StarNames.version = "1.0.2"
+StarNames.version = "1.1.0"
 StarNames.author = "DonjaZero"
 
 StarNames.experimental = false -- Experimental features flag for development branches
@@ -11,6 +11,7 @@ local defaultOptions = {
 -- User options accessible in the settings menu
     debug = false,
     showLabels = true, -- Are star labels with the name visible or not?
+    showOnMainScreen = true, -- Are star labels also shown on the main CP screen? Or just the individual trees?
     passiveLabelColor = {1, 1, 0.5},
     passiveLabelSize = 24,
     slottableLabelColor = {1, 1, 1},
@@ -85,7 +86,7 @@ local function Initialize()
 
     StarNames.dbg("Initializing...")
 
-    StarNames.savedOptions.settingsVersion = 1 -- Not currently used, but useful to have for migrating to new settings formats
+    StarNames.savedOptions.settingsVersion = 2 -- Not currently used, but useful to have for migrating to new settings formats
 
     StarNames:CreateSettingsMenu()
 
@@ -95,15 +96,18 @@ local function Initialize()
     RegisterEvents()
 
     CHAMPION_PERKS_CONSTELLATIONS_FRAGMENT:RegisterCallback("StateChange", function(oldState, newState)
-        if (newState ~= SCENE_SHOWN) then return end
-
+        if (newState ~= SCENE_SHOWN) then
+            return
+        end
+        
         -- Run this on the first time only
         if (not initialOpened) then
             initialOpened = true
             StarNames.InitLabels()
-            if (StarNames.savedOptions.showLabels) then
+            if (StarNames.savedOptions.showLabels and StarNames.savedOptions.showOnMainScreen) then
                 StarNames.RefreshLabels(true)
             end
+            -- Further decisions on whether labels are shown are made in OnCanvasAnimationStopped
         end
     end)
 

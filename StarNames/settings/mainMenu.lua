@@ -41,6 +41,19 @@ function StarNames:CreateSettingsMenu()
             width = "full",
         },
         {
+            type = "checkbox",
+            name = "Show labels in main CP screen",
+            tooltip = "Show the star names on the top level CP screen with all three constellations (can be crowded)",
+            default = true,
+            getFunc = function() return StarNames.savedOptions.showOnMainScreen end,
+            setFunc = function(value)
+                StarNames.savedOptions.showOnMainScreen = value
+                StarNames.dbg("Settings: showOnMainScreen set to " .. tostring(StarNames.savedOptions.showOnMainScreen))
+                StarNames.RefreshLabels(value)
+            end,
+            width = "full",
+        },
+        {
             type = "colorpicker",
             name = "Passive star label color",
             tooltip = "Color of the labels for unslottable stars",
