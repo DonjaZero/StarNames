@@ -66,16 +66,29 @@ local function OnCanvasAnimationStopped()
     local activeConstellation = nil
     if (greenBounds and blueBounds and redBounds) then
         activeConstellation = "All"
+        if (StarNames.savedOptions.showOnMainScreen == false) then
+            StarNames.RefreshLabels(StarNames.savedOptions.showOnMainScreen)
+        end
     elseif (greenBounds) then
         activeConstellation = "Green"
+        StarNames.RefreshLabels(StarNames.savedOptions.showLabels)
     elseif (blueBounds) then
         activeConstellation = "Blue"
+        StarNames.RefreshLabels(StarNames.savedOptions.showLabels)
     elseif (redBounds) then
         activeConstellation = "Red"
+        StarNames.RefreshLabels(StarNames.savedOptions.showLabels)
     else
         activeConstellation = "Cluster"
         StarNames.RefreshLabels(StarNames.savedOptions.showLabels)
     end
+end
+
+----------------------------------------------------------------
+-- Function to hide labels when starting animation
+local function OnCanvasAnimationStarted()
+    -- TODO: Implement handler for OnCanvasAnimationStarted if needed
+    return
 end
 
 ----------------------------------------------------------------
@@ -92,6 +105,7 @@ end
 function StarNames.InitLabels()
     -- Timeout to not spam operations on every animation tick
     ZO_ChampionPerksCanvasConstellation1:SetHandler("OnRectChanged", function()
-        EVENT_MANAGER:RegisterForUpdate(StarNames.name .. "RectTimeout", 200, OnCanvasAnimationStopped)
+        EVENT_MANAGER:RegisterForUpdate(StarNames.name .. "RectTimeout", 100, OnCanvasAnimationStopped)
     end)
+    -- TODO: Add handler for OnCanvasAnimationStarted to not show labels; may make transitions to main screen look better when option to hide labels on it is selected
 end
