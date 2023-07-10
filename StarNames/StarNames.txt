@@ -1,12 +1,12 @@
 ## Title: Star Names
 # Display the names of the stars in the Champion Point constellations
 
-## Author: DonjaZero
+## Author: |cDAFF21DonjaZero|r
 ## Contributors: Based on code by Kyzeragon et al., suggestions by ExoY
 
-## AddOnVersion: 4
-## Version: 1.1.0
-## APIVersion: 101037 101038
+## AddOnVersion: 6
+## Version: 1.1.2
+## APIVersion: 101038 101039
 
 ## IsLibrary: false
 ## DependsOn: LibAddonMenu-2.0>=31
