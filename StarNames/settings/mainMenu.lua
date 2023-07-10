@@ -6,7 +6,7 @@ function StarNames:CreateSettingsMenu()
         type = "panel",
         name = "Star Names",
         displayName = "Star Names",
-        author = "|cDAFF21" .. StarNames.author .. "|r",
+        author = StarNames.author,
         version = StarNames.version,
         registerForRefresh = true,
         registerForDefaults = true,
