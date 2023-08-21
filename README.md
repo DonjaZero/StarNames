@@ -17,7 +17,7 @@ Star Names makes manual Champion Point changes easier and more convenient by eli
 
 ## What it doesn't do
 
-Star Names does **NOT** automate any Champion Point management actions such as automatic saving, slotting, or re-spec'ing of CP.  If you require those features, please consider using Dynamic CP by Kyzeragon instead.  These can be used with some other CP management addons like Jack of all Trades for even more options and fine-tuned control over automatic CP management.
+Star Names does **NOT** automate any Champion Point management actions such as automatic saving, slotting, or re-allocation of CP.  If you require those features, please consider using Dynamic CP by Kyzeragon instead.  These can be used with some other CP management addons like Jack of all Trades for even more options and fine-tuned control over automatic CP management.
 
 ## Known issues
 
