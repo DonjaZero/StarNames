@@ -1,3 +1,7 @@
+1.1.4
+
+ - Updated for API 101040, version 9.2
+
 1.1.3
 
  - Set primary API to 101039 and remove secondary API version now that Update 39 (9.1.5) has been deployed to live megaservers for PC/Mac
