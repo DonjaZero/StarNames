@@ -4,9 +4,9 @@
 ## Author: |cDAFF21DonjaZero|r
 ## Contributors: Based on code in Dynamic CP by Kyzeragon, feature suggestions by ExoY, documentation edits by AF
 
-## AddOnVersion: 9
-## Version: 1.1.5
-## APIVersion: 101040 101041
+## AddOnVersion: 10
+## Version: 1.1.6
+## APIVersion: 101041 101042
 
 ## IsLibrary: false
 ## DependsOn: LibAddonMenu-2.0>=31
