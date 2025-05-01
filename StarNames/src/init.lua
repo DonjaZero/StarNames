@@ -1,6 +1,6 @@
 StarNames = StarNames or {}
 StarNames.name = "StarNames"
-StarNames.version = "1.1.9"
+StarNames.version = "1.2.0"
 StarNames.author = "|cDAFF21DonjaZero|r"
 
 StarNames.experimental = false -- Experimental features flag for development branches
@@ -13,7 +13,7 @@ local defaultOptions = {
     showLabels = true, -- Are star labels with the name visible or not?
     showOnMainScreen = true, -- Are star labels also shown on the main CP screen? Or just the individual trees?
     passiveLabelColor = {1, 1, 0.5},
-    passiveLabelSize = 24,
+    passiveLabelSize = 22,
     slottableLabelColor = {1, 1, 1},
     slottableLabelSize = 18,
     clusterLabelColor = {1, 0.7, 1},

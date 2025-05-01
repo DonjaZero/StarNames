@@ -71,7 +71,7 @@ function StarNames:CreateSettingsMenu()
             name = "Passive star label font size",
             tooltip = "Font size of the labels for unslottable stars",
             getFunc = function() return StarNames.savedOptions.passiveLabelSize end,
-            default = 24,
+            default = 22,
             min = 8,
             max = 54,
             step = 1,
