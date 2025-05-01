@@ -1,3 +1,9 @@
+1.2.0
+
+ - Increment API version for Update 46
+ - Slightly reduced the default font size for passive star labels due to the number of them on the latest Craft constellation ("green tree")
+ - Console support
+
 1.1.9
 
  - Increment API version for Update 45
